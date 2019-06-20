@@ -4,6 +4,7 @@ import { Card, CardBody, Form, FormInput } from "shards-react";
 
 import "react-quill/dist/quill.snow.css";
 import "../assets/quill.css";
+import MarkDown from "react-markdown";
 
 const Editor = () => (
   <Card small className="mb-3">
@@ -13,6 +14,8 @@ const Editor = () => (
         <ReactQuill className="add-new-post__editor mb-1" />
       </Form>
     </CardBody>
+
+    <MarkDown source="# Hello" />
   </Card>
 );
 
